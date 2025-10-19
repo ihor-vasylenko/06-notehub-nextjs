@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import css from './SearchBox.module.css';
 
-interface Props {
+interface SearchBoxProps {
   onSearch: (query: string) => void;
 }
 
-export default function SearchBox({ onSearch }: Props) {
+export default function SearchBox({ onSearch }: SearchBoxProps) {
   const [value, setValue] = useState('');
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);

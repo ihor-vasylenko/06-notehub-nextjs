@@ -4,11 +4,11 @@ import type { Note } from '@/types/note';
 import Link from 'next/link';
 import css from './NoteList.module.css';
 
-interface Props {
+interface NoteListProps {
   notes: Note[];
 }
 
-export default function NoteList({ notes }: Props) {
+export default function NoteList({ notes }: NoteListProps) {
   const queryClient = useQueryClient();
   const { mutate, isPending } = useMutation({
     mutationFn: (id: string) => deleteNote(id),
