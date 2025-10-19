@@ -9,7 +9,7 @@ import SearchBox from '@/components/SearchBox/SearchBox';
 import Modal from '@/components/Modal/Modal';
 import NoteForm from '@/components/NoteForm/NoteForm';
 import ErrorMessage from '@/components/ErrorMessage/ErrorMessage';
-import css from './notes.module.css';
+import css from './Notes.module.css';
 
 export default function NotesClient() {
   const [searchQuery, setSearchQuery] = useState('');
